@@ -1,0 +1,30 @@
+/* === Navbar === */
+.custom-navbar {
+  background-color: rgba(0, 50, 90, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.75rem 1.5rem;
+}
+.navbar-logo {
+  height: 40px;
+}
+
+/* === Footer === */
+.footer-section {
+  background-color: #1b1f3b;
+}
+.footer-logo {
+  height: 45px;
+  margin-right: 10px;
+}
+.partner-logo {
+  max-width: 250px;
+}
+.social-links a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #FFD700;
+}

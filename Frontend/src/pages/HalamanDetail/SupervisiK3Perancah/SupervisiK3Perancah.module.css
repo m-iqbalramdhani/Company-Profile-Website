@@ -1,0 +1,93 @@
+.pageContainer {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FBFBFB;
+  color: #1C352D; /* Gunakan #FBFBFB sebagai warna teks utama (lebih lembut dari putih murni) */
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background-color: #1C352D;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FBFBFB;
+  margin-top: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fbbf24; /* Tetap jadi focal point */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #E2E2E2; /* Sedikit lebih gelap dari #FBFBFB untuk hierarki visual */
+}
+
+/* GLASS SECTION — ubah ke latar terang lembut */
+.sectionGlass {
+  background-color: #FBFBFB; /* Latar card menggunakan #FBFBFB */
+  color: #1C352D; /* Teks gelap di atas latar terang */
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(28, 53, 45, 0.1);
+}
+
+.sectionTitle {
+  color: #1C352D;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #fbbf24; /* Garis bawah tetap pakai aksen */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Sesuaikan teks dalam card */
+.sectionGlass p,
+.sectionGlass li,
+.sectionGlass h5 {
+  color: #1C352D;
+}
+
+.sectionGlass .text-warning {
+  color: #fbbf24 !important;
+}
+
+/* BUTTON */
+.btnRegister {
+  background-color: #fbbf24;
+  color: #1C352D;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnRegister:hover {
+  background-color: #eab308;
+  transform: translateY(-2px);
+  color: #1C352D;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 1rem; }
+  .sectionGlass { padding: 1.5rem; }
+}
